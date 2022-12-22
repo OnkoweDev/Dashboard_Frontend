@@ -11,12 +11,14 @@ import GoogleAdTitle from "../pages/GoogleAdTitle";
 import Home from "../pages/Home";
 import Instagram from "../pages/Instagram";
 import LinkedIn from "../pages/LinkedIn";
+import LinkedInShort from "../pages/LinkedInShort";
 import ProductDesc from "../pages/ProductDesc";
 import Resources from "../pages/Resources";
 import Theme from "../pages/Theme";
 import Transcribe from "../pages/Transcribe";
 import Upload from "../pages/Upload";
 import Youtube from "../pages/Youtube";
+import Voice from "./Voice";
 
 export {
   TopNav,
@@ -32,10 +34,12 @@ export {
   Home,
   Instagram,
   LinkedIn,
+  LinkedInShort,
   ProductDesc,
   Resources,
   Theme,
   Transcribe,
   Upload,
   Youtube,
+  Voice,
 };
