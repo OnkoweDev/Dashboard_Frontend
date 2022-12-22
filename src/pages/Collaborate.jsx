@@ -9,7 +9,7 @@ const Collaborate = () => {
         <TopNav />
         <div className="container">
           <SideNav />
-          <div className="content">Collaborate</div>
+          <div className="content ">Collaborate</div>
         </div>
       </main>
     </>
