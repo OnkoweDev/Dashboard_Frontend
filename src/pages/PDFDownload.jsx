@@ -1,19 +1,18 @@
 import React from "react";
 import { SideNav, TopNav } from "../components";
-import "./styles/GoogleAdTitle.css";
 
-const GoogleAdTitile = () => {
+const PDFDownload = () => {
   return (
     <>
       <main>
         <TopNav />
         <div className="container">
           <SideNav />
-          <div className="content">Google Ad Title</div>
+          <div className="content"></div>
         </div>
       </main>
     </>
   );
 };
 
-export default GoogleAdTitile;
+export default PDFDownload;

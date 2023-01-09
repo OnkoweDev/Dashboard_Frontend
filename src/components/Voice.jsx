@@ -1,15 +1,12 @@
-import React, { useState } from "react";
-import "./styles/Voice.css";
+import React from "react";
 
-import { AiOutlineAudio, AiOutlineAudioMuted } from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
+import { CiPause1 } from "react-icons/ci";
+import { FiStopCircle } from "react-icons/fi";
+import { HiOutlinePencil } from "react-icons/hi";
+import { RiVoiceprintFill } from "react-icons/ri";
 
 const Voice = () => {
   // state
-  let current = false;
-  let state = false;
-  const [isActive, setIsActive] = useState(current);
-  const [active, setActive] = useState(state);
 
   return (
     <div className="voice-div">
@@ -17,29 +14,33 @@ const Voice = () => {
         className="icon-div"
         onClick={(e) => {
           e.preventDefault();
-          setIsActive((current = !current));
-          console.log(isActive);
         }}
       >
-        {isActive ? (
-          <HiOutlinePencilAlt className="icon" />
-        ) : (
-          <HiOutlinePencilAlt className="icon" />
-        )}
+        <RiVoiceprintFill />
       </button>
       <button
         className="icon-div"
         onClick={(e) => {
           e.preventDefault();
-          setActive((state = !state));
-          console.log(active);
         }}
       >
-        {active ? (
-          <AiOutlineAudioMuted className="icon" />
-        ) : (
-          <AiOutlineAudio className="icon" />
-        )}
+        <CiPause1 />
+      </button>
+      <button
+        className="icon-div"
+        onClick={(e) => {
+          e.preventDefault();
+        }}
+      >
+        <FiStopCircle />
+      </button>
+      <button
+        className="icon-div"
+        onClick={(e) => {
+          e.preventDefault();
+        }}
+      >
+        <HiOutlinePencil />
       </button>
     </div>
   );

@@ -12,15 +12,19 @@ import {
   Transcribe,
   Collaborate,
   Ebook,
-  Article,
-  Facebook,
   Instagram,
   LinkedIn,
-  GoogleAdDesc,
   Youtube,
   ProductDesc,
-  GoogleAdTitle,
-  LinkedInShort,
+  ContentRephraser,
+  ArticleBlog,
+  BlogWriter,
+  BlogIntro,
+  BlogSection,
+  ParagraphWriter,
+  Tweets,
+  PDFDownload,
+  MSDownload,
 } from "../src/components/index";
 
 function App() {
@@ -36,15 +40,19 @@ function App() {
         <Route path="draft" element={<Draft />} />
         <Route path="collaborate" element={<Collaborate />} />
         <Route path="ebook" element={<Ebook />} />
-        <Route path="article" element={<Article />} />
-        <Route path="facebook" element={<Facebook />} />
+        <Route path="blog-intro-generator" element={<BlogIntro />} />
+        <Route path="blog-section-generator" element={<BlogSection />} />
         <Route path="instagram" element={<Instagram />} />
-        <Route path="linkedIn" element={<LinkedIn />} />
-        <Route path="linkedInShort" element={<LinkedInShort />} />
-        <Route path="googleDesc" element={<GoogleAdDesc />} />
-        <Route path="youtube" element={<Youtube />} />
+        <Route path="short-LinkedIn-posts" element={<LinkedIn />} />
+        <Route path="blog-article-writer" element={<BlogWriter />} />
+        <Route path="content-rephraser" element={<ContentRephraser />} />
+        <Route path="youtube-intro-generator" element={<Youtube />} />
         <Route path="product" element={<ProductDesc />} />
-        <Route path="googleTitle" element={<GoogleAdTitle />} />
+        <Route path="article-blog-conclusion" element={<ArticleBlog />} />
+        <Route path="paragraph-writer" element={<ParagraphWriter />} />
+        <Route path="tweets-generation" element={<Tweets />} />
+        <Route path="pdf-download" element={<PDFDownload />} />
+        <Route path="MSword-download" element={<MSDownload />} />
       </Routes>
     </React.Fragment>
   );

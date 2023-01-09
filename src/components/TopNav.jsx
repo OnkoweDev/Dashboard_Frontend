@@ -1,16 +1,19 @@
 import React from "react";
-import logo from "../assets/dummyLogo.png";
+import logo from "../assets/Logo.png";
 import profile from "../assets/dummyprofile.png";
 import ebook from "../assets/ebookIcon.png";
-import adwords from "../assets/adwords.png";
-import article from "../assets/article.png";
-import facebook from "../assets/facebook.png";
+import blog1 from "../assets/article.png";
+import blog3 from "../assets/blog-writer.png";
+import blog2 from "../assets/blog-section.png";
+import content from "../assets/content.png";
+import articleBlog from "../assets/article-blog.png";
+import paragraph from "../assets/paragraph.png";
+import tweet from "../assets/tweet.png";
 import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
 import product from "../assets/product.png";
 import youtube from "../assets/youtube.png";
 import { Link, NavLink } from "react-router-dom";
-import Home from "../pages/Home";
 import "./styles/TopNav.css";
 
 const NewProjectLinks = ({ link, displayImage, text }) => {
@@ -65,49 +68,59 @@ const TopNav = () => {
                   text="Ebook Writing"
                 />
                 <NewProjectLinks
-                  link="/article"
-                  displayImage={article}
-                  text="Article Writing"
+                  link="/blog-intro-generator"
+                  displayImage={blog1}
+                  text="Blog Intro Generation"
                 />
                 <NewProjectLinks
-                  link="/facebook"
-                  displayImage={facebook}
-                  text="Facebook Ad"
+                  link="/blog-section-generator"
+                  displayImage={blog2}
+                  text="Blog Section Generation"
+                />
+                <NewProjectLinks
+                  link="/blog-article-writer"
+                  displayImage={blog3}
+                  text="Blog Article Writer"
+                />
+                <NewProjectLinks
+                  link="/content-rephraser"
+                  displayImage={content}
+                  text="Content Rephraser"
+                />
+                <NewProjectLinks
+                  link="/article-blog-conclusion"
+                  displayImage={articleBlog}
+                  text="Article/Blog Conclusion"
+                />
+                <NewProjectLinks
+                  link="/paragraph-writer"
+                  displayImage={paragraph}
+                  text="Paragraph Writer"
+                />
+                <NewProjectLinks
+                  link="/short-LinkedIn-posts"
+                  displayImage={linkedin}
+                  text="Short LinkedIn Posts"
+                />
+                <NewProjectLinks
+                  link="/tweets-generation"
+                  displayImage={tweet}
+                  text="Tweets Generation"
+                />
+                <NewProjectLinks
+                  link="/youtube-intro-generator"
+                  displayImage={youtube}
+                  text="Youtube Intro Generator"
                 />
                 <NewProjectLinks
                   link="/instagram"
                   displayImage={instagram}
-                  text="Instagram Caption"
-                />
-                <NewProjectLinks
-                  link="/linkedInShort"
-                  displayImage={linkedin}
-                  text="Linkedln Short Post"
-                />
-                <NewProjectLinks
-                  link="/linkedIn"
-                  displayImage={linkedin}
-                  text="Linkedin Ad"
-                />
-                <NewProjectLinks
-                  link="/googleDesc"
-                  displayImage={adwords}
-                  text="Google Ad Description"
-                />
-                <NewProjectLinks
-                  link="/youtube"
-                  displayImage={youtube}
-                  text="Youtube Description"
+                  text="Instagram Captions Generator"
                 />
                 <NewProjectLinks
                   link="/product"
                   displayImage={product}
                   text="Products description"
-                />
-                <NewProjectLinks
-                  link="/googleTitle"
-                  displayImage={adwords}
-                  text="Google Ad Titles"
                 />
               </div>
             </li>
@@ -127,18 +140,18 @@ const TopNav = () => {
                 >
                   convert to:
                 </p>
-                <button href="" className="dropdown-link dropdown-btn-link">
+                <Link
+                  to="/pdf-download"
+                  className="dropdown-link dropdown-btn-link"
+                >
                   Pdf
-                </button>
-                <button href="" className="dropdown-link dropdown-btn-link">
+                </Link>
+                <Link
+                  to="/MSword-download"
+                  className="dropdown-link dropdown-btn-link"
+                >
                   ms word
-                </button>
-                <button href="" className="dropdown-link dropdown-btn-link">
-                  mobi
-                </button>
-                <button href="" className="dropdown-link dropdown-btn-link">
-                  epub
-                </button>
+                </Link>
               </div>
             </li>
             <li className="nav-link">
@@ -180,7 +193,9 @@ const TopNav = () => {
               </div>
             </li>
             <li className="nav-link">
-              <NavLink to='/collaborate' className="navLink">Collaborate</NavLink>
+              <NavLink to="/collaborate" className="navLink">
+                Collaborate
+              </NavLink>
             </li>
           </ul>
         </div>

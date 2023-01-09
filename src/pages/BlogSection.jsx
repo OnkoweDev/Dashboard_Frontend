@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./styles/Facebook.css";
+import blog2 from "../assets/blog-section.png";
 import {
   BCDIcons,
   OutputNumber,
@@ -6,29 +8,21 @@ import {
   SideNav,
   TopNav,
 } from "../components";
-import "./styles/ProductDesc.css";
-
-import product from "../assets/product.png";
-
-import { CiPause1 } from "react-icons/ci";
-import { FiStopCircle } from "react-icons/fi";
+import { AiOutlineAudio } from "react-icons/ai";
 import { HiOutlinePencil } from "react-icons/hi";
+import { FiStopCircle } from "react-icons/fi";
+import { CiPause1 } from "react-icons/ci";
 import { RiVoiceprintFill } from "react-icons/ri";
 
-import { AiOutlineAudio } from "react-icons/ai";
-
-const ProductDesc = () => {
-  // state to keep track of number of output
-  const [outputNumber, setOutputNumber] = useState(1);
-
+const Facebook = () => {
   // state for audio option
   const [isAudio, setIsAudio] = useState(false);
-
+  // state to keep track of number of output
+  const [outputNumber, setOutputNumber] = useState(1);
   // handle audio option
   const handleAudio = () => {
     console.log("Mic is clicked");
     setIsAudio(true);
-    //
   };
   return (
     <>
@@ -37,32 +31,13 @@ const ProductDesc = () => {
         <div className="container">
           <SideNav />
           <div className="content">
-            <div className="instagram-ad inner-page-container">
+            <div className="facebook-container inner-page-container">
               {/* header */}
-              <ProjectHeader
-                image={product}
-                title="Product description  Generator"
-              />
-              {/* body container */}
+              <ProjectHeader image={blog2} title="Blog Section Generator" />
+              {/* body */}
               <div className="body-content">
                 <div className="left">
-                  <p className="product-p">Product name*</p>
-                  <input
-                    type="text"
-                    placeholder="Title"
-                    style={{
-                      display: "block",
-                      background: "var(--primary-blue)",
-                      borderRadius: "var(--border-radius-xs)",
-                      border: "none",
-                      outline: "none",
-                      height: "10%",
-                      margin: "10px 0",
-                      padding: "10px",
-                    }}
-                  />
-                  {/* product description */}
-                  <p className="product-p">Product description*</p>
+                  <p className="product-p">Title*</p>
                   <textarea
                     name=""
                     id=""
@@ -73,7 +48,7 @@ const ProductDesc = () => {
                       borderRadius: "var(--border-radius-xs)",
                       border: "none",
                       outline: "none",
-                      height: "30%",
+                      height: "15%",
                       margin: "10px 0",
                       padding: "10px",
                       resize: "none",
@@ -135,10 +110,11 @@ const ProductDesc = () => {
                     outputNumber={outputNumber}
                     setOutputNumber={setOutputNumber}
                   />
-                  <button className="article-btn" style={{ fontSize: "12px" }}>
-                    Create Product Description
+                  <button className="article-btn" style={{ fontSize: "14px" }}>
+                    Create Blog Section Generator
                   </button>
                 </div>
+                {/*  */}
                 <div className="right">
                   <div className="sec-1">
                     <BCDIcons />
@@ -158,4 +134,4 @@ const ProductDesc = () => {
   );
 };
 
-export default ProductDesc;
+export default Facebook;

@@ -2,6 +2,11 @@
   height: 10vh;
   padding: 10px 0;
   background: var(--primary-blue);
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; */
 }
 
 .inner-container {
@@ -62,7 +67,7 @@
   display: none;
   position: absolute;
   background-color: var(--background);
-  max-width: 160px;
+  /* max-width: 200px; */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius-sm);
   overflow: hidden;
