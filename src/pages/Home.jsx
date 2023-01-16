@@ -7,11 +7,11 @@ const Home = () => {
   const [data, setData] = useState(HomepageData);
   console.log(data);
   // mapped data
-  const mappedData = data.map((data) => {
+  const mappedData = data.map(({title, content}, index) => {
     return (
-      <div className="card">
-        <h2>{data.title}</h2>
-        <p>{data.content}</p>
+      <div className="card" key={index}>
+        <h2>{title}</h2>
+        <p>{content}</p>
       </div>
     );
   });

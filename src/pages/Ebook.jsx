@@ -64,7 +64,7 @@ const Ebook = () => {
                       margin: "20px 0",
                     }}
                   ></h2>
-                  <div id="book-content"></div>
+                  <div id="book-content" style={{whiteSpace: 'pre-line'}}></div>
                   <button
                     style={{
                       display: "flex",

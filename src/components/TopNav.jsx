@@ -14,6 +14,17 @@ import linkedin from "../assets/linkedin.png";
 import product from "../assets/product.png";
 import youtube from "../assets/youtube.png";
 import { Link, NavLink } from "react-router-dom";
+
+import german from "../assets/german.png";
+import france from "../assets/france.png";
+import italy from "../assets/italy.png";
+import japan from "../assets/japan.png";
+import portugal from "../assets/portugal.png";
+import russia from "../assets/russia.png";
+import spain from "../assets/spain.png";
+import usa from "../assets/usa.png";
+import china from "../assets/china.png";
+
 import "./styles/TopNav.css";
 
 const NewProjectLinks = ({ link, displayImage, text }) => {
@@ -164,31 +175,115 @@ const TopNav = () => {
               <div className="drop-content">
                 <button
                   href=""
-                  style={{ textTransform: "capitalize", fontWeight: "700" }}
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
                   className="dropdown-link dropdown-btn-link"
                 >
-                  english
+                  <img src={german} alt="german" />
+                  <p>German</p>
                 </button>
                 <button
                   href=""
-                  style={{ textTransform: "capitalize", fontWeight: "700" }}
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
                   className="dropdown-link dropdown-btn-link"
                 >
-                  french
+                  <img src={russia} alt="russia" />
+                  <p>Russia</p>
                 </button>
                 <button
                   href=""
-                  style={{ textTransform: "capitalize", fontWeight: "700" }}
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
                   className="dropdown-link dropdown-btn-link"
                 >
-                  spanish
+                  <img src={spain} alt="german" />
+                  <p>Spain</p>
                 </button>
                 <button
                   href=""
-                  style={{ textTransform: "capitalize", fontWeight: "700" }}
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
                   className="dropdown-link dropdown-btn-link"
                 >
-                  german
+                  <img src={portugal} alt="german" />
+                  <p>Portuguese</p>
+                </button>
+                <button
+                  href=""
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
+                  className="dropdown-link dropdown-btn-link"
+                >
+                  <img src={italy} alt="german" />
+                  <p>Italian</p>
+                </button>
+                <button
+                  href=""
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
+                  className="dropdown-link dropdown-btn-link"
+                >
+                  <img src={japan} alt="german" />
+                  <p>Japanese</p>
+                </button>
+                <button
+                  href=""
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
+                  className="dropdown-link dropdown-btn-link"
+                >
+                  <img src={china} alt="german" />
+                  <p>Chinese</p>
+                </button>
+                <button
+                  href=""
+                  style={{
+                    textTransform: "capitalize",
+                    fontWeight: "700",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                  }}
+                  className="dropdown-link dropdown-btn-link"
+                >
+                  <img src={spain} alt="german" />
+                  <p>Spanish</p>
                 </button>
               </div>
             </li>
