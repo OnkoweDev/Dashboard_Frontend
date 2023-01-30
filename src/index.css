@@ -155,10 +155,6 @@ body {
   }
 }
 
-@media (prefers-color-scheme: light) {
-}
-
-
 .sss {
   border: 1px solid red;
 }

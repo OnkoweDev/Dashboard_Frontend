@@ -27,6 +27,10 @@ import china from "../assets/china.png";
 
 import "./styles/TopNav.css";
 
+import { BiHomeAlt, BiBell, BiLogOut } from "react-icons/bi";
+
+import { ProfileRow } from "../components";
+
 const NewProjectLinks = ({ link, displayImage, text }) => {
   return (
     <Link
@@ -294,8 +298,50 @@ const TopNav = () => {
             </li>
           </ul>
         </div>
-        <div className="profile">
+        {/*  */}
+        <div className="profile drop-btn">
           <img src={profile} alt="" style={{ width: "100%" }} />
+          <div className="drop-content">
+            <div className="dropdown-link dropdown-btn-link">
+              <section className="top">
+                <aside className="profile__img">
+                  <img src={profile} alt="" />
+                </aside>
+                <aside className="profile__details">
+                  <h3>Kendal Matthews</h3>
+                  <small>kendalmatt@gmail.com</small>
+                </aside>
+              </section>
+              <hr style={{ margin: "25px 0" }} />
+              <section className="botttom">
+                <ProfileRow
+                  Icon={BiHomeAlt}
+                  title={"Profile"}
+                  link="/profile"
+                  text={"Personal information"}
+                />
+                <ProfileRow
+                  Icon={BiBell}
+                  title={"Notifications"}
+                  link="/notification"
+                  text={"Something new"}
+                />
+                <ProfileRow
+                  Icon={BiHomeAlt}
+                  title={"Prefrences"}
+                  link="/preference"
+                  text={"Manage your prefrences"}
+                />
+                <ProfileRow
+                  Icon={BiHomeAlt}
+                  title={"Password"}
+                  link="/password"
+                  text={"Change password"}
+                />
+                <ProfileRow Icon={BiLogOut} title={"Log Out"} link="/" />
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

@@ -2,11 +2,6 @@
   height: 10vh;
   padding: 10px 0;
   background: var(--primary-blue);
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1; */
 }
 
 .inner-container {
@@ -53,7 +48,6 @@
 .top-nav .inner-container .nav ul .nav-link:hover,
 .top-nav .inner-container .nav ul .drop-btn:hover {
   transition: var(--transition);
-  /* font-weight: 600; */
 }
 
 .top-nav .profile {
@@ -88,6 +82,10 @@
   transition: var(--transition);
 }
 
+.profile .dropdown-btn-link:hover {
+  background: none;
+}
+
 .drop-content .dropdown-btn-link {
   display: block;
   text-align: left;
@@ -99,4 +97,47 @@
 
 .drop-btn:hover .drop-content {
   display: block;
+}
+
+
+/* profile */
+
+.profile .drop-content {
+  right: 0;
+  padding: 15px 20px;
+}
+
+.profile .drop-content .dropdown-link .top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile .drop-content .dropdown-link .top .profile__img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+
+  border-radius: var(--border-radius-half);
+}
+
+.profile .drop-content .dropdown-link .top .profile__img img {
+  width: 100%;
+}
+
+.profile .top h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.profile .top small {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--active);
+
+  text-transform: lowercase;
 }

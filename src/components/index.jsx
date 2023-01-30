@@ -31,6 +31,13 @@ import OutputNumber from "./OutputNumber";
 import PDFDownload from "../pages/PDFDownload";
 import MSDownload from "../pages/MSDownload";
 
+import ProfileRow from "./ProfileRow";
+
+import Profile from "../pages/Profile";
+import Notification from "../pages/Notification";
+import Preference from "../pages/Preference";
+import Password from "../pages/Password";
+
 export {
   TopNav,
   SideNav,
@@ -63,4 +70,9 @@ export {
   OutputNumber,
   PDFDownload,
   MSDownload,
+  ProfileRow,
+  Profile,
+  Notification,
+  Password,
+  Preference,
 };

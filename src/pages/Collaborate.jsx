@@ -56,10 +56,14 @@ const Collaborate = () => {
             <button>Y</button>
           </div>
         </aside>`;
+
+        console.log(person.name);
       } else if (inputValue === "") {
         console.log("input field is empty");
         document.querySelector(".display__ul").textContent = "";
       }
+
+      // document.querySelector(".display__ul").textContent = "";
     });
   };
 

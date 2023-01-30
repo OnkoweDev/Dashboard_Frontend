@@ -25,6 +25,10 @@ import {
   Tweets,
   PDFDownload,
   MSDownload,
+  Profile,
+  Notification,
+  Password,
+  Preference,
 } from "../src/components/index";
 
 function App() {
@@ -53,6 +57,10 @@ function App() {
         <Route path="tweets-generation" element={<Tweets />} />
         <Route path="pdf-download" element={<PDFDownload />} />
         <Route path="MSword-download" element={<MSDownload />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="notification" element={<Notification />} />
+        <Route path="password" element={<Password />} />
+        <Route path="preference" element={<Preference />} />
       </Routes>
     </React.Fragment>
   );
