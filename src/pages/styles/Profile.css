@@ -34,7 +34,7 @@
 }
 
 label,
-input,
+.input,
 textarea {
   display: block;
   width: 100%;
@@ -47,7 +47,7 @@ label {
   color: var(--black);
 }
 
-input,
+.input,
 textarea {
   height: 48px;
   margin-top: 10px;
@@ -57,7 +57,7 @@ textarea {
   border-radius: var(--border-radius-sm);
 }
 
-input:focus,
+.input:focus,
 textarea:focus {
   outline: 1px solid var(--hover-blue);
   border: none;

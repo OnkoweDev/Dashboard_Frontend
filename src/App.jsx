@@ -30,12 +30,18 @@ import {
   Password,
   Preference,
 } from "../src/components/index";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
     <React.Fragment>
+      {/* <SignUp /> */}
+      {/* <SignIn /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Home />} />
+        <Route path="/" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
         <Route path="/upload" element={<Upload />} />
         <Route path="font" element={<Font />} />
         <Route path="resources" element={<Resources />} />

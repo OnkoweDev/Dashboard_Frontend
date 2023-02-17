@@ -36,7 +36,10 @@ const Password = () => {
                     <label htmlFor="currentPassword">Current password</label>
 
                     <article className="input__wrapper">
-                      <input type={showPassowrd ? "text" : "password"} />
+                      <input
+                        type={showPassowrd ? "text" : "password"}
+                        className="input"
+                      />
                       {showPassowrd ? (
                         <AiOutlineEyeInvisible
                           className="icon"
@@ -52,7 +55,10 @@ const Password = () => {
                     <label htmlFor="newPassword">New password</label>
 
                     <article className="input__wrapper">
-                      <input type={newPassowrd ? "text" : "password"} />
+                      <input
+                        type={newPassowrd ? "text" : "password"}
+                        className="input"
+                      />
                       {newPassowrd ? (
                         <AiOutlineEyeInvisible
                           className="icon"
@@ -76,7 +82,10 @@ const Password = () => {
                     </label>
 
                     <article className="input__wrapper">
-                      <input type={confirmPassowrd ? "text" : "password"} />
+                      <input
+                        type={confirmPassowrd ? "text" : "password"}
+                        className="input"
+                      />
                       {confirmPassowrd ? (
                         <AiOutlineEyeInvisible
                           className="icon"
